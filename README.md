@@ -5,9 +5,9 @@ Tracks Archaeology Materials gained and goals via the chat window.
 Retains data until you hit the "Clear" button.
 
 ## Installation:
-Install by copying this either copy pasting the following link in your browser. 
+Install by copying this either copy pasting the following link in your browser.
 
-alt1://addapp/https://zerogwafa.github.io/ArchMatCounter/appconfig.json
+alt1://addapp/https://hoppingmad9.github.io/ArchMatCounter/appconfig.json
 
 Or, by going to the following link in the Alt1 Browser
 
@@ -19,7 +19,7 @@ https://zerogwafa.github.io/ArchMatCounter/
     2. Ensure that the chat filter is off on the chat window you want to track materials on.  
 
         2a. Ensure timestamps are on!  Otherwise, the tracker may miss a material!
-    
+
     3. Gather materials.  This will catch all material messages.
 
 The app will automatically start tracking as soon as it is opened.
