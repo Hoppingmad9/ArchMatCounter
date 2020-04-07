@@ -15,7 +15,7 @@ reader.pos.boxes.map((box, i) => {
     $(".chat").append(`<option value=${i}>Chat ${i}</option>`)
 })
 //If multiple boxes are found, this will select the first, which should be the top-most chat box on the screen.
-reader.pos.mainbox = reader.pos.boxes[0];
+reader.pos.mainbox = reader.pos.boxes[1];
 showSelectedChat(reader.pos);
 
 
@@ -138,6 +138,7 @@ $(function () {
     $("button, input, select, body").attr("tabindex", "-1");
 
     $(".chat").change(function () {
+
         reader.pos.mainbox = reader.pos.boxes[$(this).val()];
         showSelectedChat(reader.pos);
     })
