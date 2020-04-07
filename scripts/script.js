@@ -6,6 +6,7 @@ reader.readargs = {
         a1lib.mixcolor(255, 128, 0), //Uncommon Mats
         a1lib.mixcolor(255, 165, 0), //Scavenging comps
         a1lib.mixcolor(255, 0, 0) //Rare Mats
+        a1lib.mixcolor(0, 255, 0) //Imp-souled
     ],
     backwards: true
 };
@@ -43,7 +44,7 @@ function readChatbox() {
     if (chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g) !== null) {
         var material = chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g)[0].trim();
     } else if (chat.match(/Your imp-souled tool? .+/g) !== null) {
-        console.log("imp-souled");
+        console.log('imp-souled');
         tidyTable('Imp-souled');
     } else return;
     if (material !== null) {
