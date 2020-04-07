@@ -41,11 +41,18 @@ function readChatbox() {
         return;
     //Match "You find some <material>"
     console.log(chat);
+    var material = null;
     if (chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g) !== null) {
-        var material = chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g)[0].trim();
+        material = chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g)[0].trim();
     } else if (chat.match(/Your imp-souled tool? .+/g) !== null) {
-        console.log('imp-souled');
-        tidyTable('Imp-souled');
+        console.log('Imp-souled');
+        let name = 'Imp-souled';
+        materials.forEach(mat => {
+            if (mat.name.replace("'", "") === name) {
+                mat.qty++;
+                tidyTable(name);
+            }
+        })
     } else return;
     if (material !== null) {
         let name = "";
