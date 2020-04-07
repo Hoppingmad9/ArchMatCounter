@@ -41,6 +41,8 @@ function readChatbox() {
     //Match "You find some <material>"
     if (chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g) !== null)
         var material = chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g)[0].trim();
+    else if (chat.match(/Your imp-souled tool? .+/g) !== null)
+        tidyTable('Imp-souled');
     else return;
     if (material !== null) {
         let name = "";
@@ -139,7 +141,7 @@ $(function () {
         })
         if ($(this).is(':checked')) {
             $(".filter").prop("disabled", true).click();
-            
+
             // Apply tabindex
             $(".row .qty").attr("tabindex", "1");
             $(".row .goal").attr("tabindex", "2");

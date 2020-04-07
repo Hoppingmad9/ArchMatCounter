@@ -313,6 +313,15 @@ let materials = [
         level: "98",
         faction: "Agnostic",
         location: "Waiko"
+    },
+    {
+        name: "Imp-souled",
+        qty: 0,
+        goal: 0,
+        hide: false,
+        level: "N/A",
+        faction: "Agnostic",
+        location: "N/A"
     }
 ];
 
