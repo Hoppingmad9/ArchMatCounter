@@ -39,6 +39,7 @@ function readChatbox() {
     if (chat.trim().length === 0) //Check if chat is null, to reduce some console errors.
         return;
     //Match "You find some <material>"
+    console.log(chat);
     if (chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g) !== null) {
         var material = chat.match(/You find some .+|Your auto-screener .+|material storage:? .+/g)[0].trim();
     } else if (chat.match(/Your imp-souled tool? .+/g) !== null) {
