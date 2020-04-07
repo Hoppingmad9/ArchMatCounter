@@ -5,8 +5,8 @@ reader.readargs = {
         a1lib.mixcolor(255, 255, 255), //Common Mats
         a1lib.mixcolor(255, 128, 0), //Uncommon Mats
         a1lib.mixcolor(255, 165, 0), //Scavenging comps
-        a1lib.mixcolor(255, 0, 0) //Rare Mats
-        a1lib.mixcolor(0, 255, 0) //Imp-souled
+        a1lib.mixcolor(255, 0, 0), //Rare Mats
+        a1lib.mixcolor(0, 255, 0), //Imp-souled
     ],
     backwards: true
 };
